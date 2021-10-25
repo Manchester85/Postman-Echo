@@ -20,9 +20,9 @@ public class Echo {
                 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("data"))
+                .body("data", equalTo("some data"))
                 .header("Content-Type",equalTo("application/json; charset=utf-8"))
-                .header("Content-Length", equalTo("419"))
+                .header("Content-Length", equalTo("4"))
                 .header("Connection", equalTo("keep-alive"));
     }
 }
