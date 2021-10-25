@@ -19,7 +19,7 @@ public class Echo {
                 .post("/post")
                 // Проверки
                 .then()
-                .statusCode(200)
+                .statusCode(300)
                 .body("data", equalTo("some data"))
                 .header("Content-Type",equalTo("application/json; charset=utf-8"))
                 .header("Connection", equalTo("keep-alive"));
